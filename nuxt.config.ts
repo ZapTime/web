@@ -18,7 +18,13 @@ export default defineNuxtConfig({
     },
     highlight: {
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
-      theme: 'dracula'
+      theme: 'material-default'
     }
+  },
+
+  meta: {
+    link: [
+      { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }
+    ]
   }
 })
