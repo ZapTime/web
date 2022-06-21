@@ -24,7 +24,7 @@ const steps = [
     <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:pb-96 lg:pt-40 lg:text-left">
       <div class="flex justify-center items-start">
         <div class="2xl:px-4 w-1/2 sm:px-8 2xl:pr-16 pt-40">
-          <h1 class="text-4xl tracking-tight font-extrabold text-gray-200 sm:text-5xl md:text-6xl lg:text-5xl">
+          <h1 class="text-4xl tracking-tight font-extrabold dark:text-gray-200 text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl">
             <span class="block xl:inline">Easy way to manage your meetings and calls</span>
           </h1>
           <p class="mt-3 max-w-xs  text-lg text-gray-400 sm:text-xl md:mt-8 md:max-w-sm">
@@ -43,6 +43,17 @@ const steps = [
           <Calendars />
         </div>
       </div>
+    </div>
+
+
+    <div class="max-w-[840px] mx-auto">
+      <h2 class="text-5xl text-center mb-8 tracking-tight font-extrabold dark:text-gray-200 text-gray-900 ">Use full width calendar</h2>
+      <CalendarFull></CalendarFull>
+    </div>
+
+    <div class="max-w-[840px] mt-24 mx-auto">
+      <h2 class="text-5xl text-center mb-8 tracking-tight font-extrabold dark:text-gray-200 text-gray-900 ">Externelize event booking</h2>
+      <CalendarFullExternalBooking></CalendarFullExternalBooking>
     </div>
 
     <!-- <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">

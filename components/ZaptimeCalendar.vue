@@ -1,6 +1,6 @@
 <template>
-  <div class="max-h-[570px] shadow-2xl   shadow-gray-900">
-    <ZapTimeCalendar :calendar-id="calendarId" :config="config" />
+  <div class="max-h-[570px] shadow-2xl rounded-xl  shadow-gray-900">
+    <ZapTimeCalendar @event-changed="event => $emit('event-changed', event)" :calendar-id="calendarId" :config="config" />
   </div>
 </template>
 

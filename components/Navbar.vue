@@ -90,7 +90,7 @@ const resources = [
           </div>
           <PopoverGroup as="nav" class="hidden md:flex space-x-10">
             <Popover v-slot="{ open }" class="relative">
-              <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-200', 'group  rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none']">
+              <PopoverButton :class="[open ? 'text-gray-900' : 'dark:text-gray-200 text-gray-600', 'group z-[100] rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none']">
                 <span>Solutions</span>
                 <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-200']" aria-hidden="true" />
               </PopoverButton>
@@ -103,7 +103,7 @@ const resources = [
                 leave-from-class="opacity-100 translate-y-0"
                 leave-to-class="opacity-0 translate-y-1"
               >
-                <PopoverPanel class="absolute -ml-4 mt-3 transform z-10 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                <PopoverPanel class="absolute -ml-4 mt-3 z-[100] transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                   <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                       <a v-for="item in features" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
@@ -123,20 +123,25 @@ const resources = [
               </transition>
             </Popover>
 
-            <button class=" text-base font-medium text-gray-200 hover:text-gray-900" @click="navigateTo('/pricing')">
+            <button class=" text-base font-medium dark:text-gray-200 text-gray-600 hover:text-gray-900" @click="navigateTo('/pricing')">
               Pricing
             </button>
-            <button class="text-base font-medium text-gray-200 hover:text-gray-900" @click="navigateTo('/docs')">
+            <button class="text-base font-medium dark:text-gray-200 text-gray-600 hover:text-gray-900" @click="navigateTo('/docs')">
               Docs
             </button>
           </PopoverGroup>
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="https://app.zaptime.app/login" class="whitespace-nowrap text-base font-medium text-gray-100 hover:text-gray-900">
+            <ColorModeSwitch class="mr-12 mb-1"></ColorModeSwitch>
+            <a href="https://app.zaptime.app/login" class="whitespace-nowrap text-base font-medium dark:text-gray-100 text-gray-600 hover:text-gray-900">
               Sign in
             </a>
-            <a href="https://app.zaptime.app/register" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-gray-500 bg-white ">
-              Sign up
-            </a>
+             <a href="https://app.zaptime.app/register" class="dark:hidden ml-5 px-4 py-2 border border-transparent text-base font-medium rounded-md text-white to-z-pink-600 from-z-orange-600 bg-white bg-gradient-to-r  hover:bg-z-pink-700 md:py-2 md:text-lg">
+                Start free trial
+              </a>
+
+             <a href="https://app.zaptime.app/register" class="hidden dark:inline-block ml-5 px-3 py-1.5 border text-gray-900 border-transparent text-base font-medium rounded-md  bg-white md:text-lg">
+                Start free trial
+              </a>
           </div>
         </div>
       </div>
