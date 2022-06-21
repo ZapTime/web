@@ -1,7 +1,7 @@
 <template>
   <div class="relative mb-32 w-[400px]" @mouseover="hovered = true" @mouseleave="onMouseLeave">
     <div
-      class="absolute hover:z-50 transition-all translate-y-2 scale-95 hover:scale-100 hover:translate-y-0 hover:translate-x-4 ease-out duration-300 left-60 w-full"
+      class="absolute hidden 2xl:block w-full hover:z-50 transition-all translate-y-2 scale-95 hover:scale-100 hover:translate-y-0 hover:translate-x-4 ease-out duration-300 left-60"
       :class="[autoElevated === 'calypso-theme-calendar' && !hovered ? 'z-40 translate-y-0 translate-x-4 scale-100': 'z-auto']"
     >
       <ZaptimeCalendar calendar-id="calypso-theme-calendar" :config="calypsoConfig" />
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { IZapTimeConfig } from '@zaptime/vue3'
+import { IZapTimeConfig, book, confirm, cancel } from '@zaptime/vue3'
 
 const calendarKeys = ['blueviolet-theme-calendar', 'green-theme-calendar', 'mullbery-theme-calendar', 'calypso-theme-calendar']
 
@@ -66,7 +66,7 @@ onBeforeMount(() => {
 })
 
 const calypsoConfig: IZapTimeConfig = {
-  token: 'kikuhNJV3zWBeIvIXGryWsubIEZ74dRX',
+  token: 'PpBC1z6M01ofd24Ojdy7OHC9iL7fctju',
   min: 0,
   max: 1,
   externalBooking: false,
@@ -75,7 +75,7 @@ const calypsoConfig: IZapTimeConfig = {
     'https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 
   theme: {
-    mode: 'dark',
+    mode: 'light',
     colors: {
       25: '#DBEFF2',
       50: '#F1FAFA',
@@ -93,7 +93,7 @@ const calypsoConfig: IZapTimeConfig = {
 }
 
 const mullberyConfig: IZapTimeConfig = {
-  token: 'kikuhNJV3zWBeIvIXGryWsubIEZ74dRX',
+  token: 'zcQB081VOx1ZjIlMwbYFYzR5pqNgaWtI',
   min: 0,
   max: 1,
   externalBooking: false,
@@ -102,7 +102,7 @@ const mullberyConfig: IZapTimeConfig = {
     'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=250&h=350&dpr=1',
 
   theme: {
-    mode: 'dark',
+    mode: 'light',
     colors: {
       25: '#F9EAF4',
       50: '#F5D5E8',
@@ -120,7 +120,7 @@ const mullberyConfig: IZapTimeConfig = {
 }
 
 const greenConfig: IZapTimeConfig = {
-  token: 'kikuhNJV3zWBeIvIXGryWsubIEZ74dRX',
+  token: 'hxmDoQQM0hT05V8zPPqQ3D1I0aybS4Lf',
   min: 0,
   max: 1,
   externalBooking: false,
@@ -129,7 +129,7 @@ const greenConfig: IZapTimeConfig = {
     'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=250&h=350&dpr=1',
 
   theme: {
-    mode: 'dark',
+    mode: 'light',
     colors: {
       25: '#F5FDF8',
       50: '#EEFBF4',
@@ -147,7 +147,7 @@ const greenConfig: IZapTimeConfig = {
 }
 
 const blueConfig: IZapTimeConfig = {
-  token: 'kikuhNJV3zWBeIvIXGryWsubIEZ74dRX',
+  token: 'R1znGb26YwqUGjxRUROWnXXgxbhb46wL',
   min: 0,
   max: 1,
   externalBooking: false,
@@ -169,7 +169,7 @@ const blueConfig: IZapTimeConfig = {
   },
 
   theme: {
-    mode: 'dark',
+    mode: 'light',
     colors: {
       25: '#E3E4F6',
       50: '#CDD1F0',

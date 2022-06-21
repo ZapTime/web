@@ -1,5 +1,5 @@
 <template>
-  <div class="max-h-[570px] shadow-2xl">
+  <div class="max-h-[570px] shadow-2xl   shadow-gray-900">
     <ZapTimeCalendar :calendar-id="calendarId" :config="config" />
   </div>
 </template>

@@ -83,16 +83,16 @@ const resources = [
             </button>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
-            <PopoverButton class=" rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <PopoverButton class=" rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span class="sr-only">Open menu</span>
               <MenuIcon class="h-6 w-6" aria-hidden="true" />
             </PopoverButton>
           </div>
           <PopoverGroup as="nav" class="hidden md:flex space-x-10">
             <Popover v-slot="{ open }" class="relative">
-              <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-500', 'group  rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none']">
+              <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-200', 'group  rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none']">
                 <span>Solutions</span>
-                <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
+                <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-200']" aria-hidden="true" />
               </PopoverButton>
 
               <transition
@@ -112,7 +112,7 @@ const resources = [
                           <p class="text-base font-medium text-gray-900">
                             {{ item.name }}
                           </p>
-                          <p class="mt-1 text-sm text-gray-500">
+                          <p class="mt-1 text-sm text-gray-200">
                             {{ item.description }}
                           </p>
                         </div>
@@ -123,18 +123,18 @@ const resources = [
               </transition>
             </Popover>
 
-            <button class=" text-base font-medium text-gray-500 hover:text-gray-900" @click="navigateTo('/pricing')">
+            <button class=" text-base font-medium text-gray-200 hover:text-gray-900" @click="navigateTo('/pricing')">
               Pricing
             </button>
-            <button class="text-base font-medium text-gray-500 hover:text-gray-900" @click="navigateTo('/docs')">
+            <button class="text-base font-medium text-gray-200 hover:text-gray-900" @click="navigateTo('/docs')">
               Docs
             </button>
           </PopoverGroup>
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="https://app.zaptime.app/login" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="https://app.zaptime.app/login" class="whitespace-nowrap text-base font-medium text-gray-100 hover:text-gray-900">
               Sign in
             </a>
-            <a href="https://app.zaptime.app/register" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white to-z-pink-600 from-z-orange-600 bg-gradient-to-r  hover:bg-z-orange-500">
+            <a href="https://app.zaptime.app/register" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-gray-500 bg-white ">
               Sign up
             </a>
           </div>
@@ -157,7 +157,7 @@ const resources = [
                   <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
                 </div>
                 <div class="-mr-2">
-                  <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span class="sr-only">Close menu</span>
                     <XIcon class="h-6 w-6" aria-hidden="true" />
                   </PopoverButton>
@@ -191,7 +191,7 @@ const resources = [
                 <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white to-z-pink-600 from-z-orange-600 bg-gradient-to-r ">
                   Sign up
                 </a>
-                <p class="mt-6 text-center text-base font-medium text-gray-500">
+                <p class="mt-6 text-center text-base font-medium text-gray-200">
                   Existing customer?
                   <a href="#" class="text-indigo-600 hover:text-indigo-500">
                     Sign in

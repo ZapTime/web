@@ -1,5 +1,5 @@
 <template>
-  <div class="prose w-full max-w-[840px]">
+  <div class="prose dark:prose-invert w-full max-w-[840px]">
     <ContentDoc :key="router.currentRoute.value.path" :path="router.currentRoute.value.path" />
   </div>
 </template>
